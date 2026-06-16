@@ -1,0 +1,33 @@
+services:
+  palworld-server:
+    build:
+      context: .
+      args:
+        PGID: 1000
+        PUID: 1000
+    env_file:
+      - './.env'
+    command: "/home/steam/docker/scripts/startServer.sh"
+    volumes:
+      - "./app:/app:rw"
+      - "./backup:/home/steam/backup:rw"
+      - "./docker:/home/steam/docker:ro"
+    ports:
+      - "8211:8211/udp"
+    expose:
+      - "8211/udp"
+    networks:
+      waahhhh-palworld:
+        ipv4_address: 172.33.0.3
+    restart: "no"
+    tty: true
+
+networks:
+  waahhhh-palworld:
+    name: waahhhh-palworld
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.33.0.0/16
+        #  gateway: 172.33.0.1

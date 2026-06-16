@@ -1,0 +1,9 @@
+services:
+  palworld-server:
+    build:
+      args:
+        PGID: 1001
+        PUID: 1001
+    volumes:
+      - "/var/www/gitlab/data/sftpgo/data/data/palworld:/app:rw"
+    restart: "always"
