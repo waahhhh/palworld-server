@@ -1,5 +1,10 @@
 # palworld-server
 
+> [!NOTE]  
+> Why set up a separate project when Steamcmd and Palworld offer an official setup using Docker containers?  
+> Steamcmd does not support non-root users currently.  
+> Palworld is not transparent enough. I need different user IDs depending on the environment.  
+
 ## App ID
 
 | ID      | Name                      |
