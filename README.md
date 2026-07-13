@@ -54,7 +54,7 @@ Native: ~ 4 GB
 Make changes to `/docker/config/values.ini`!  
 
 The `PalWorldSettings.ini` file expects a format with poor usability.  
-Override the values of `docker/config/PalWorldSettings.ini` or from the [official documentation](https://docs.palworldgame.com/settings-and-operation/configuration).  
+Override the values of `docker/config/DefaultPalWorldSettings.ini` or from the [official documentation](https://docs.palworldgame.com/settings-and-operation/configuration).  
 
 To roll out the configuration use [Override Server Configuration](#override-server-configuration).  
 

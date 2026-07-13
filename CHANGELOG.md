@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Updated default server config
+
 ## [1.0.0] - 2026-06-19
 
 ### Added
